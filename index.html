@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sabrina Insta Post</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="m-5">
+    <div class="container">
+      <div class="row p-3 border-bottom">
+        <div class="col-md-4">
+          <img
+            src="/img/icons8-instagram-50.png"
+            alt=""
+            class=""
+            id="instagramIcon"
+          /><label
+            style="font-weight: 600; font-size: xx-large"
+            class="align-middle"
+            >Instagram</label
+          >
+        </div>
+        <!--Start of Modal Code-->
+        <div class="col-md-6">
+          <div class="container mt-3 d-flex justify-content-end">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
+              Create a new post
+            </button>
+          </div>
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Creat a new post</h4>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <label for="caption" class="">Caption</label>
+                  <textarea
+                    name="caption"
+                    id="caption"
+                    cols="60"
+                    rows="10"
+                    placeholder="Add the caption of your post here"
+                  ></textarea>
+                  <button type="button" class="">
+                    <img src="img/icons8-camera-50.png" alt="camera" />
+                  </button>
+                  <button type="button" class="">
+                    <img
+                      src="img/icons8-location-50.png"
+                      alt="location"
+                      class=""
+                    />
+                  </button>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-bs-dismiss="modal"
+                  >
+                    Publish
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of Modal code-->
+
+        <!--start of dropdown-->
+        <div class="col-md-2">
+          <div class="container mt-3 d-flex justify-content-start">
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
+                <img src="img/icons8-gear-16.png" alt="dropdown" />
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    style="font-weight: bold; color: red"
+                    href="#"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of dropdown code-->
+      <!--start of toggle code-->
+      <div class="container mt-3">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#grid"
+              ><img src="img/icons8-grid-48.png" alt=""></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#single"><img src="img/icons8-square-50.png" alt=""></a>
+          </li>
+          <!--<li class="nav-item">
+         <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+       </li>-->
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="grid" class="container tab-pane active">
+            <br />
+            <!--insert pictures below-->
+            <div class="row m-1">
+              <div class="col-4">
+                <img
+                  src="https://images.unsplash.com/photo-1626695436783-d942d5928174?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Globe of Africa"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://images.unsplash.com/photo-1511185307590-3c29c11275ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80"
+                  alt="Morocco, Sahara"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://images.unsplash.com/photo-1552710307-537199cd41c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="African Fabrics"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="row m-1">
+              <div class="col-4">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1661964016765-6a44f9d16c72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2137&q=80"
+                  alt="Safari, Lions"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://images.unsplash.com/photo-1521493959102-bdd6677fdd81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="African Kids"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://images.unsplash.com/photo-1484318571209-661cf29a69c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="South Africa"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="row m-1">
+              <div class="col-4">
+                <img
+                  src="https://images.unsplash.com/photo-1552710307-8d1c604d6319?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80"
+                  alt="Adjame Market, Abidjan, Ivory Coast"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1664298911709-913c8cf7069c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+                  alt="Afrian Safari Elephants"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="https://images.unsplash.com/photo-1614531341773-3bff8b7cb3fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
+                  alt="Nairobi"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="single" class="container tab-pane fade">
+            <br />
+            <!--insert pictures below-->
+            <div
+              class="container rounded border color lightgray bg-light"
+              style="width: 500px"
+            >
+              <div class="row m-0 p-0">
+                <div class="col d-flex justify-content-start">
+                  Africa on the Globe
+                </div>
+                <div class="col d-flex justify-content-end">07/19/21</div>
+              </div>
+              <div class="row m-0 p-0">
+                <div class="col d-flex justify-content-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1626695436783-d942d5928174?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt="Globe of Africa"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="row m-0 p-0">
+                <div class="col d-flex justify-content-start">1.5k Likes</div>
+              </div>
+              <div class="row m-0 p-0">
+                <div class="col d-flex justify-content-start">
+                  One of the Largest Continents on earth!
+                </div>
+              </div>
+            </div>
+            <br />
+            <div
+              class="container rounded border color lightgray bg-light"
+              style="width: 500px"
+            >
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  Morocco, Sahara
+                </div>
+                <div class="col d-flex justify-content-end">11/20/17</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1511185307590-3c29c11275ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80"
+                    alt="Morocco, Sahara"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">4.8k Likes</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  Tamnougalt, Morocco
+                </div>
+              </div>
+            </div>
+            <br />
+            <div
+              class="container rounded border color lightgray bg-light"
+              style="width: 500px"
+            >
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  African Fabrics
+                </div>
+                <div class="col d-flex justify-content-end">03/16/19</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1552710307-537199cd41c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt="African Fabrics"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">3.3k Likes</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  Adjame Market, Abidjan, Ivory Coast
+                </div>
+              </div>
+            </div>
+            <br />
+            <div
+              class="container rounded border color lightgray bg-light"
+              style="width: 500px"
+            >
+              <div class="row">
+                <div class="col d-flex justify-content-start">Roam Free</div>
+                <div class="col d-flex justify-content-end">08/31/22</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1661964016765-6a44f9d16c72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2137&q=80"
+                    alt="Safari, Lions"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">100 Likes</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  Lions roaming free in Kenya
+                </div>
+              </div>
+            </div>
+            <br />
+            <div
+              class="container rounded border color lightgray bg-light"
+              style="width: 500px"
+            >
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  Oh Happy Day!
+                </div>
+                <div class="col d-flex justify-content-end">03/19/18</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1521493959102-bdd6677fdd81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt="African Kids"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">3.5k Likes</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  Taken in a school in Uganda. These young boys were so happy to
+                  have their picture taken. This was at a God Loves Kids school.
+                </div>
+              </div>
+            </div>
+            <br />
+            <div
+              class="container rounded border color lightgray bg-light"
+              style="width: 500px"
+            >
+              <div class="row">
+                <div class="col d-flex justify-content-start">South Africa</div>
+                <div class="col d-flex justify-content-end">01/13/2017</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1484318571209-661cf29a69c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt="South Africa"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">7.5k Likes</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  Have a look at Worlds End
+                </div>
+              </div>
+            </div>
+            <br />
+            <div
+              class="container rounded border color lightgray bg-light"
+              style="width: 500px"
+            >
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  Adjame Market
+                </div>
+                <div class="col d-flex justify-content-end">03/16/19</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1552710307-8d1c604d6319?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80"
+                    alt="Adjame Market, Abidjan, Ivory Coast"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">6k Views</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  Abidjan, Ivory Coast
+                </div>
+              </div>
+            </div>
+            <br />
+            <div
+              class="container rounded border color lightgray bg-light"
+              style="width: 500px"
+            >
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  Elephant Migration
+                </div>
+                <div class="col d-flex justify-content-end">09/27/22</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1664298911709-913c8cf7069c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+                    alt="Afrian Safari Elephants"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">300 Likes</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  African Safari
+                </div>
+              </div>
+            </div>
+            <br />
+            <div
+              class="container rounded border color lightgray bg-light"
+              style="width: 500px"
+            >
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  Africa Landscape
+                </div>
+                <div class="col d-flex justify-content-end">02/28/21</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1614531341773-3bff8b7cb3fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
+                    alt="Nairobi"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">27,000 Likes</div>
+              </div>
+              <div class="row">
+                <div class="col d-flex justify-content-start">
+                  A morning from a dream
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+          <!--<div id="menu2" class="container tab-pane fade"><br>
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>-->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
